@@ -9,7 +9,7 @@ dist/
 npm-debug.log*
   
 # OS  
-.DS_Store
+.DS_Store 
 Thumbs.db
 
 # Dev only files
