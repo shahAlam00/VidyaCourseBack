@@ -26,9 +26,9 @@ const corsOptions = {
     if (origin.includes("localhost") || origin.includes("127.0.0.1")) return callback(null, true);
     if (origin.endsWith(".vercel.app")) return callback(null, true);
     const allowed = [
-      "https://thedigicampus.com",
-      "https://www.thedigicampus.com",
-      "https://admin.thedigicampus.com",
+      "https://courseadmin.vidyaudbhav.com",
+      "https://course.vidyaudbhav.com"
+
     ];
     if (allowed.includes(origin)) return callback(null, true);
     return callback(new Error("CORS blocked: " + origin));
