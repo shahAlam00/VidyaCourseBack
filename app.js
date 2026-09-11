@@ -27,8 +27,8 @@ const corsOptions = {
     if (origin.endsWith(".vercel.app")) return callback(null, true);
     const allowed = [
       "https://courseadmin.vidyaudbhav.com",
-      "https://course.vidyaudbhav.com"
-
+      "https://course.vidyaudbhav.com",
+      "https://admincourse.vidyaudbhav.com"
     ];
     if (allowed.includes(origin)) return callback(null, true);
     return callback(new Error("CORS blocked: " + origin));
