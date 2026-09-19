@@ -198,14 +198,9 @@ export const getTemplates = async (req, res) => {
     // Fetch Templates
     // ---------------------------------------------------
 
-    const templates = await Certificate.find(query)
-      .populate(
-        "courseId",
-        "name title"
-      )
-      .sort({
-        createdAt: -1,
-      });
+
+    
+      
 
     return res.status(200).json({
       success: true,
